@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(206, 206, 206);
+}
+mark {
+    background-color: rgb(63, 182, 63);
+}
+summary {
+    color:blue;
+    font-size: large;
+    font-style: bold;
+}
+p{
+    color:rgb(7, 0, 32);
+    font-family:Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+}
+ul{
+    color:blueviolet
+}
