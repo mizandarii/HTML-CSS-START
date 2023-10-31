@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attr^=value</title>
+    <style>
+        /*значение атрибута class начинается с test */
+        div[class^="test"]{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="first_test">Первый div.</div>
+    <div class="second">Второй div.</div>
+    <div class="test">Третий div.</div>
+    <div class="test4">Четвертый div.</div>
+    <p class="test">Параграф.</p>
+</body>
+</html>
