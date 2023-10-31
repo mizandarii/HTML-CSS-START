@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-align</title>
+    <style>
+        #grid {
+            height: 600px;
+            border:1px solid black;
+            width: 300px;
+            display: -moz-box;
+            display: -webkit-box;
+            display: flexbox;
+        }
+
+        div{
+            width: 50px;
+            height: 25px;
+
+            /*
+            box-align - определяет, как выравниваются дочерние элементы box элемента
+            start - контент выравнивается по левому или верхнему краю контейнера
+            (т.е. горизонтальный контент выравнивается по верху, а вертикальный по левому краю)
+            end - контент выравнивается по нижнему или правому краю
+            center - контент выравнивается по центру
+            baseline - контент выравнивается по базовой линни текста
+            stretch - контент равномерно растягивается так, чтобы не было пустого пространства в блоке
+            */
+
+            -moz-box-align: start;
+            -webkit-box-align: start;
+            box-align: start;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+
+        <div style = "background-color: #00ff90;">
+        </div>
+
+        <div style = "background-color: #0094ff;">
+        </div>
+
+        <div style = "background-color: #b200ff;">
+        </div>
+
+        <div style = "background-color: #ffd800;">
+        </div>
+
+    </div>
+</body>
+</html>

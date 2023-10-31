@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Combinators</title>
+
+    <style>
+
+        /*
+            получение p, который следует сразу за h2
+        */
+
+        h2 + p{
+            margin: 10px;
+            border: solid green;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Hello</h2>
+    <p>world</p><!--Данный элемент будет выбран селектором-->
+
+    <h2>Hello</h2>
+    <p>world</p><!--Данный элемент будет выбран селектором-->
+
+    <h2>HELLO WORLD</h2>
+    <p>hello world</p>
+
+    <a href="http://www.w3.org/TR/selectors/">SCC3 Selectors</a>
+</body>
+</html>

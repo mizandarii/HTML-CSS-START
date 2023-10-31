@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor-specific</title>
+    <style>
+        p{
+            /*
+                если CSS свойство еще не попало в спецификации или частично реализовано 
+                используется специфическое название в соответствии с произаодителем браузера
+            */
+            -khtml-property: 1px; /*Konqueror*/
+            -ms-property: 1px; /*Microsoft IE*/
+            -moz-property: 1px; /*Mozilla (Gecko browsers)*/
+            -webkit-property: 1px; /*Safari & Chrome browsers (webkit browsers)*/
+            -o-property: 1px; /*Opera*/
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Hello world
+    </p>
+</body>
+</html>

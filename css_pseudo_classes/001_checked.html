@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checked</title>
+
+    <style>
+        /*
+            :checked псевдокласс, аоторый применяется у элементам интерфейса
+            (checkbox или radio) когда они находятся в выбранном состоянии
+            input:checked + span - найти вск span, которые следуют за выбранным input
+        */
+        input:checked + span{
+            background:#fc0;
+        }
+    </style>
+</head>
+<body>
+    <p><strong>Какие курсы Вы прошли в учебном центре</strong></p>
+    <p>
+        <input type="checkbox" name="a1" checked="checked"><span>HTML&CSS</span><br>
+        <input type="checkbox" name="a2" checked="checked"><span>JAVASCRIPT</span><br>
+        <input type="checkbox" name="a3" checked="checked"><span>jQuery</span><br>
+        <input type="checkbox" name="a4" checked="checked"><span>C# Starter</span><br>
+        <p>
+            <input type="submit" value="Отправить">
+        </p>
+    </p>
+</body>
+</html>

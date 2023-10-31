@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Использование display: flexbox</title>
+
+    <style type = "text/css">
+        .grid {
+            /*flexbox - указывает, что содержимое контейнера выводится по горизонтали или 
+            вертикали в зависимости от параметра box-orient*/
+            display: -moz-box;
+            display: -webkit-box;
+            display: flexbox;
+
+            -moz-box-orient: horizontal;
+            -webkit-box-orient: horizontal;
+            box-orient: horizontal;
+        }
+
+        .block {
+            width: 400px;
+            background: #0094ff;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class = "block">Block1</div>
+        <div class = "block">Block2</div>
+        <div class = "block">Block3</div>
+        <div class = "block">Block4</div>
+    </div>
+</body>
+</html>

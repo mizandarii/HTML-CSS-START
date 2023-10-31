@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+
+    <style>
+
+        /*правило для всех input*/
+        input{
+            margin: 10px;
+        }
+
+        /*правило для всех input с атрибутом required*/
+        input[required]{
+            border:1px solid red;
+        }
+
+        /*правило для всех input с атрибутом type=sumbit*/
+        input[typr=submit]{
+            border:1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" required="required" />
+        <br />
+        <input type="password"  />
+        <br />
+        <input type="sumbit"  />
+        <br />
+    </form>
+</body>
+</html>

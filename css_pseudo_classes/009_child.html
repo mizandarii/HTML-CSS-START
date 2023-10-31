@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Псевдоклассы last-child и first-child</title>
+    <style>
+        /* первый параграф в определенном контейнере */
+        p:first-of-type{
+            background-color: green;
+        }
+
+        /* первый дочерний элемент любого div */
+        div :first-child{
+            background-color: blue;
+        }
+
+        /* последний дочерний элемент любого div */
+        div :last-child{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>заголовок</h1>
+    <p>первый парагрфа</p>
+    <p>второй парагрфа</p>
+    <p>третий парагрфа</p>
+    <p>четвертый парагрфа</p>
+
+    <div>
+        <span>первая строка</span> <!--div :first-child-->
+        <br />
+        <span>вторая строка</span>
+        <br />
+        <span>третья строка</span>
+        <br />
+        <span>четвертая строка</span> <!--div :last-child-->
+    </div>
+</body>
+</html>
